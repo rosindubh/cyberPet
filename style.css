@@ -6,6 +6,7 @@
 }
 
 .top {
+    /*background-color: aqua;*/
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -15,6 +16,7 @@
 }
 
 h2 {
+    /*background-color:goldenrod;*/
     display: flex;
     align-items: center;
     flex-direction: column;
@@ -22,13 +24,17 @@ h2 {
 }
 
 .middle {
+    /*background-color: coral;*/
     /*background-color: lightcoral;*/
-    height:40vh;
+    height:50vh;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 
+.bottom {
+    /*background-color:lightgreen;*/
+}
 button {
     font-size: 50px;
     background-color: red;
