@@ -32,7 +32,6 @@ class dog extends animal {
 }
 
 Dog.addEventListener("click", () => {
-    welcome.textContent = "So you want to be a Dog!"
     input = new dog(input);
     welcome.textContent = `Hello my name is ${input.name} and I am a dog and my hunger is ${input.hunger}`
 
