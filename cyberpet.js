@@ -59,6 +59,10 @@ Cat.addEventListener("click", () => {
     welcome.textContent = `Hello my name is ${input.name} and I am a cat and my hunger is ${input.hunger}`;
     hideButtons.style.display = 'block';
     hideButtons.style.display = 'none';
+    let feedMeBtn = document.createElement('button');
+    feedMeBtn.id = 'feedMe';
+    feedMeBtn.innerHTML = 'Feed Me';
+    document.body.appendChild(feedMeBtn);
 });
 
 //listen for rabbit button
