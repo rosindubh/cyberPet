@@ -65,6 +65,10 @@ Cat.addEventListener("click", () => {
     feedMeBtn.id = 'feedMe';
     feedMeBtn.innerHTML = 'Feed Me';
     document.body.appendChild(feedMeBtn);
+    let playMeBtn = document.createElement('button');
+    playMeBtn.id = 'playMe';
+    playMeBtn.innerHTML = 'Play With Me';
+    document.body.appendChild(playMeBtn);
 });
 
 //listen for rabbit button
