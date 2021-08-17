@@ -5,6 +5,7 @@ welcome.textContent = `Hello ${input} Welcome to CyberPet`;
 const Dog = document.getElementById("dog");
 const Cat = document.getElementById("cat");
 const Rabbit = document.getElementById("rabbit");
+whichPet = document.getElementById("which-pet");
 
 
 //main class
@@ -57,6 +58,7 @@ Cat.addEventListener("click", () => {
     const hideButtons = document.getElementById("hide-buttons");
     input = new cat(input);
     welcome.textContent = `Hello my name is ${input.name} and I am a cat and my hunger is ${input.hunger}`;
+    whichPet.textContent = '';
     hideButtons.style.display = 'block';
     hideButtons.style.display = 'none';
     let feedMeBtn = document.createElement('button');
