@@ -6,6 +6,7 @@ const Dog = document.getElementById("dog");
 const Cat = document.getElementById("cat");
 const Rabbit = document.getElementById("rabbit");
 
+
 //main class
 class animal {
     constructor(name) {
@@ -23,7 +24,7 @@ class animal {
     }
     }
     
-//subclass
+//subclass dog
 class dog extends animal {
     constructor(name, likesWalks) {
         super(name);
@@ -31,26 +32,12 @@ class dog extends animal {
     }
 }
 
-Dog.addEventListener("click", () => {
-    input = new dog(input);
-    welcome.textContent = `Hello my name is ${input.name} and I am a dog and my hunger is ${input.hunger}`
-
-});
-
-Cat.addEventListener("click", () => {
-    welcome.textContent = "So you want to be a Cat"
-})
-
-Rabbit.addEventListener("click", () => {
-    welcome.textContent = "So you want to be a Rabbit"
-})
-
-
-
-//console.log("Hi my name is", toby.name, 'My hunger is', toby.hunger)
-console.log(`Hi my name is ${input.name}. My hunger is currently ${input.hunger}`)
-
-
+  // subclass cat
+  class cat extends animal {
+    constructor(name, lovesMice) {
+    super(name);
+    this._lovesMice = lovesMice;}
+}
 
   // subclass rabbit 
   class rabbit extends animal {
@@ -59,7 +46,24 @@ console.log(`Hi my name is ${input.name}. My hunger is currently ${input.hunger}
     this._lovesCarrots = lovesCarrots;}
 }
 
-const bob = new rabbit('Bob'); 
-console.log(bob.name);
+//listen for dog button
+Dog.addEventListener("click", () => {
+    input = new dog(input);
+    welcome.textContent = `Hello my name is ${input.name} and I am a dog and my hunger is ${input.hunger}`
 
-console.log(input);
+});
+//listen for cat button
+Cat.addEventListener("click", () => {
+    const hideButtons = document.getElementById("hide-buttons");
+    input = new cat(input);
+    welcome.textContent = `Hello my name is ${input.name} and I am a cat and my hunger is ${input.hunger}`;
+    hideButtons.style.display = 'block';
+    hideButtons.style.display = 'none';
+});
+
+//listen for rabbit button
+Rabbit.addEventListener("click", () => {
+    input = new rabbit(input);
+welcome.textContent = `Hello my name is ${input.name} and I am a rabbit and my hunger is ${input.hunger}`
+});
+
