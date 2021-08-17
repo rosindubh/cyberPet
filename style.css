@@ -30,6 +30,7 @@ h2 {
 }
 
 button {
+    background-color: aqua;
     font-size: 50px;
     background-color: red;
     border-radius: 8px;
