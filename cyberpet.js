@@ -11,8 +11,22 @@ whichPet = document.getElementById("which-pet");
 class animal {
     constructor(name) {
     this._name = name;
-    this._hunger = 100;
+    this._hunger = 10;
+    this._thirst = 69;
+    this._bored = 49;
+    
+    if (this._hunger < 30) {
+        console.log(`${this.name} is hungry`);
     }
+    if (this._thirst < 70) {
+        console.log(`${this.name} is thirsty`);
+    }
+    if (this._bored < 50) {
+        console.log(`${this.name}  bored`);
+        }
+    }
+    
+    
     get name() {
     return this._name;
     }
@@ -90,3 +104,6 @@ function startGame() {
     thirstyMeBtn.innerHTML = "I'm Thirsty";
     document.body.appendChild(thirstyMeBtn);
 }
+
+const theCat = new animal(input);
+console.log(`${theCat.name} is the name of the cat in the game.`);
