@@ -73,7 +73,7 @@ Cat.addEventListener("click", () => {
     thirstyMeBtn.id = 'thirstyMe';
     thirstyMeBtn.innerHTML = "I'm Thirsty";
     document.body.appendChild(thirstyMeBtn);
-    myFunction();
+    shortDelay();
 });
 
 //listen for rabbit button
@@ -84,6 +84,6 @@ welcome.textContent = `Hello my name is ${input.name} and I am a rabbit and my h
 
 
 // setTimeout function
-function myFunction() {
+function shortDelay() {
     setTimeout(function(){ welcome.textContent = "Let's Play!"; }, 2500);
 }
