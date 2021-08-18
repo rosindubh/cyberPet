@@ -22,7 +22,7 @@ class animal {
         console.log(`${this.name} is thirsty`);
     }
     if (this._bored < 50) {
-        console.log(`${this.name}  bored`);
+        console.log(`${this.name}  is bored`);
         }
     }
         
@@ -67,7 +67,7 @@ Dog.addEventListener("click", () => {
 });
 //listen for cat button
 Cat.addEventListener("click", () => {
-    console.log("******THIS IS THE START OF THE GAME******")
+    console.log("******THIS HAS COME FROM Cat.addEventListener******")
     input = new cat(input);
     welcome.textContent = `Hello my name is ${input.name} and I am a cat.`;
     whichPet.textContent = `My hunger is ${input.hunger}`;
@@ -106,4 +106,4 @@ function startGame() {
 }
 
 const theCat = new animal(input);
-console.log(`${theCat.name} is the name of the cat in the game.`);
+console.log(`${theCat.name} is the name of the cat in the game. But you call it <theCat>`);
