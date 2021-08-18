@@ -55,10 +55,28 @@ Dog.addEventListener("click", () => {
 });
 //listen for cat button
 Cat.addEventListener("click", () => {
-    const hideButtons = document.getElementById("hide-buttons");
     input = new cat(input);
     welcome.textContent = `Hello my name is ${input.name} and I am a cat.`;
     whichPet.textContent = `My hunger is ${input.hunger}`;
+    startGame();
+    shortDelay();
+});
+
+//listen for rabbit button
+Rabbit.addEventListener("click", () => {
+    input = new rabbit(input);
+welcome.textContent = `Hello my name is ${input.name} and I am a rabbit and my hunger is ${input.hunger}`
+});
+
+
+// setTimeout function
+function shortDelay() {
+    setTimeout(function(){ welcome.textContent = "Let's Play!"; }, 2500);
+};
+
+// start game
+function startGame() {
+    const hideButtons = document.getElementById("hide-buttons");
     hideButtons.style.display = 'block';
     hideButtons.style.display = 'none';
     let feedMeBtn = document.createElement('button');
@@ -73,17 +91,4 @@ Cat.addEventListener("click", () => {
     thirstyMeBtn.id = 'thirstyMe';
     thirstyMeBtn.innerHTML = "I'm Thirsty";
     document.body.appendChild(thirstyMeBtn);
-    shortDelay();
-});
-
-//listen for rabbit button
-Rabbit.addEventListener("click", () => {
-    input = new rabbit(input);
-welcome.textContent = `Hello my name is ${input.name} and I am a rabbit and my hunger is ${input.hunger}`
-});
-
-
-// setTimeout function
-function shortDelay() {
-    setTimeout(function(){ welcome.textContent = "Let's Play!"; }, 2500);
 }
