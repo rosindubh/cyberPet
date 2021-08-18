@@ -7,7 +7,6 @@ const Cat = document.getElementById("cat");
 const Rabbit = document.getElementById("rabbit");
 whichPet = document.getElementById("which-pet");
 
-
 //main class
 class animal {
     constructor(name) {
@@ -67,7 +66,6 @@ Rabbit.addEventListener("click", () => {
     input = new rabbit(input);
 welcome.textContent = `Hello my name is ${input.name} and I am a rabbit and my hunger is ${input.hunger}`
 });
-
 
 // setTimeout function
 function shortDelay() {
