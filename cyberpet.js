@@ -71,7 +71,7 @@ welcome.textContent = `Hello my name is ${input.name} and I am a rabbit and my h
 
 // setTimeout function
 function shortDelay() {
-    setTimeout(function(){ welcome.textContent = "Let's Play!"; }, 2500);
+    setTimeout(function(){ welcome.textContent = `Ok ${input.name} Let's Play!`; }, 2500);
 };
 
 // start game
