@@ -25,8 +25,7 @@ class animal {
         console.log(`${this.name}  bored`);
         }
     }
-    
-    
+        
     get name() {
     return this._name;
     }
@@ -68,6 +67,7 @@ Dog.addEventListener("click", () => {
 });
 //listen for cat button
 Cat.addEventListener("click", () => {
+    console.log("******THIS IS THE START OF THE GAME******")
     input = new cat(input);
     welcome.textContent = `Hello my name is ${input.name} and I am a cat.`;
     whichPet.textContent = `My hunger is ${input.hunger}`;
