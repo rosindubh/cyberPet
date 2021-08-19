@@ -34,9 +34,9 @@ class animal {
 theCat = new animal(playerName);
 // output to console
 console.log(`Hi I'm the cat and my name is ${theCat.name}`);
-console.log(`My hunger is a ${theCat.hunger}`);
-console.log(`My thirst is a ${theCat.thirst}`);
-console.log(`My bordem is a ${theCat.bored}`)
+console.log(`My hunger is  ${theCat.hunger}`);
+console.log(`My thirst is  ${theCat.thirst}`);
+console.log(`My bordem is  ${theCat.bored}`)
 
 // if else statement to check levels NOTE: this might be better as a function
 if (theCat.hunger < 30) {
