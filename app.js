@@ -7,9 +7,9 @@ boredThreshold = 70;
 class animal {
     constructor(name) {
         this._name = name;
-        this._hunger = 27;
-        this._thirst = 51;
-        this._bored = 49;
+        this._hunger = 100;
+        this._thirst = 100;
+        this._bored = 100;
     }
     get name() {
         return this._name;
@@ -27,9 +27,9 @@ class animal {
 }
 theCat = new animal(playerName);
 console.log(`Hi I'm the cat and my name is ${theCat.name}`);
-console.log(`My hunger is ${theCat.hunger}`);
-console.log(`My thirst is ${theCat.thirst}`);
-console.log(`And my bordem is ${theCat.bored}`)
+console.log(`My hunger is a ${theCat.hunger}`);
+console.log(`My thirst is a ${theCat.thirst}`);
+console.log(`My bordem is a ${theCat.bored}`)
 if (theCat.hunger < 30) {
     console.log(`${theCat.name} the cat is hungry, my hunger needs to be ${hungerThreshold} and it is currently ${theCat._hunger}`);
 };
