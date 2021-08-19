@@ -2,6 +2,9 @@
 
 // variables
 let playerName = prompt("Enter your name here:") //input is the players name
+if (playerName == "") {
+    playerName = "Cooking Fat";
+}
 hungerThreshold = 30;
 thirstThreshold = 60;
 boredThreshold = 70;
@@ -12,7 +15,7 @@ class animal {
         this._name = name;
         this._hunger = 100;
         this._thirst = 100;
-        this._bored = 100;
+        this._bored = 69;
     }
     get name() {
         return this._name;
