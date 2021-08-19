@@ -12,7 +12,7 @@ class animal {
         this._name = name;
         this._hunger = 100;
         this._thirst = 100;
-        this._bored = 59;
+        this._bored = 100;
     }
     get name() {
         return this._name;
@@ -26,14 +26,16 @@ class animal {
     get bored() {
         return this._bored;
     }
-
 }
+// instance of animal class called theCat
 theCat = new animal(playerName);
+// output to console
 console.log(`Hi I'm the cat and my name is ${theCat.name}`);
 console.log(`My hunger is a ${theCat.hunger}`);
 console.log(`My thirst is a ${theCat.thirst}`);
 console.log(`My bordem is a ${theCat.bored}`)
 
+// if else statement to check levels NOTE: this might be better as a function
 if (theCat.hunger < 30) {
     console.log(`${theCat.name} the cat is hungry, my hunger needs to be ${hungerThreshold} and it is currently ${theCat._hunger}`);
 };
