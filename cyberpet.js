@@ -109,6 +109,8 @@ function startGame() {
     thirstyMeBtn.id = 'thirstyMe';
     thirstyMeBtn.innerHTML = "I'm Thirsty";
     document.body.appendChild(thirstyMeBtn);
+
+    //eventListeners on new elements
     feedMeBtn.addEventListener("click", () => {
         console.log("This is the feedMeBtn");
     });
