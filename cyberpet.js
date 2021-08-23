@@ -106,6 +106,12 @@ function startGame() {
     feedMeBtn.addEventListener("click", () => {
         console.log("This is the feedMeBtn");
     });
+    playMeBtn.addEventListener("click", () => {
+        console.log("This is the playMeBtn");
+    });
+    thirstyMeBtn.addEventListener("click", () => {
+        console.log("This is the thirstMeBtn");
+    });
 }
 
 const theCat = new animal(input);
