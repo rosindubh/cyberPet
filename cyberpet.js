@@ -32,6 +32,12 @@ class animal {
     get hunger() {
     return this._hunger;
     }
+    get thirst () {
+        return this._thirst;
+    }
+    get bored () {
+        return this._bored;
+    }
     eat() {
     this._hunger--;
     }
@@ -70,7 +76,7 @@ Cat.addEventListener("click", () => {
     console.log("******THIS HAS COME FROM Cat.addEventListener******")
     input = new cat(input);
     welcome.textContent = `Hello my name is ${input.name} and I am a cat.`;
-    whichPet.textContent = `My hunger is ${input.hunger}`;
+    whichPet.textContent = `Hunger:    ${input.hunger}        Bordem:    ${input._bored}           Thirst:    ${input.thirst}`;
     startGame();
     shortDelay();
 });
