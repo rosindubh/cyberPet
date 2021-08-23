@@ -103,7 +103,11 @@ function startGame() {
     thirstyMeBtn.id = 'thirstyMe';
     thirstyMeBtn.innerHTML = "I'm Thirsty";
     document.body.appendChild(thirstyMeBtn);
+    feedMeBtn.addEventListener("click", () => {
+        console.log("This is the feedMeBtn");
+    });
 }
 
 const theCat = new animal(input);
 console.log(`${theCat.name} is the name of the cat in the game. But you call it <theCat>`);
+
